@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestLeaf | Registration Page</title>
+    <link href="{{url_for('static', filename='stylesheets/style.css') }}" rel="stylesheet">
+</head>
+<body>
+<div>
+    <h1 class="main-head">Welcome to TestLeaf</h1>
+</div>
+<div align="right">
+    <form action="/register" class="card-reg" method="post">
+        <h1 align="center">Register</h1>
+        <div align="center">
+            <p>
+                Already joined?
+                <a class="link--action-button" href="/sign-in">Sign in</a>.
+            </p>
+        </div>
+        <p>
+            <label for="name">Name</label><br>
+            <input class="inputreg" id="name" name="NAME" placeholder="Name">
+        </p>
+        <p>
+            <label for="username">Username</label><br>
+            <input class="inputreg" id="username" name="UNAME" placeholder="Username">
+        </p>
+        <p>
+            <label for="Email">Email</label><br>
+            <input class="inputreg" id="email" name="EMAIL" placeholder="Email">
+        </p>
+        <p>
+            <label for="Password">Password</label><br>
+            <input class="inputreg" id="password" name="PASSWORD" placeholder="Password">
+        </p>
+        <br>
+        <input class="skill" type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
